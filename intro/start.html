@@ -10,10 +10,16 @@
 
 <body>
   <div class="container">
-    <div class="item item1">Sidebar 1</div>
-    <div class="item item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, id dolores dolorem</div>
-    <div class="item item3">Sidebar 2</div>
-    <div class="item item4">footer</div>
+    <div class="item item1">1 item</div>
+    <div class="item item2">2 item</div>
+    <div class="item item3">3 item</div>
+    <div class="item item4">4 item</div>
+    <div class="item item5">5 item</div>
+    <div class="item item6">6 item</div>
+    <div class="item item7">7 item</div>
+    <div class="item item8">8 item</div>
+    <div class="item item9">9 item</div>
+    <div class="item item10">10 item</div>
   </div>
 </body>
 
@@ -21,38 +27,13 @@
   .container {
     border: 5px solid var(--yellow);
     display: grid;
+    height: 500px;
     grid-gap: 20px;
-    grid-template-columns: 1fr 500px 1fr;
-    grid-template-rows: 150px 150px 100px;
-    grid-template-areas:
-      "sidebar-1  content   sidebar-2"
-      "sidebar-1  content   sidebar-2"
-      "footer     footer    footer"
-  }
-
-  .item1 {
-    grid-area: sidebar-1;
-  }
-
-  .item2 {
-    grid-area: content;
-  }
-
-  .item3 {
-    grid-area: sidebar-2;
-  }
-
-  .item4 {
-    grid-area: footer;
-  }
-
-  @media (max-width: 700px) {
-    .container {
-      grid-template-areas:
-        "content  content   content"
-        "sidebar-1  sidebar-1   sidebar-2"
-        "footer     footer    footer"
-    }
+    grid-template-columns: repeat(5, 100px);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
   }
 </style>
 
