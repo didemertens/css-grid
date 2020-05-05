@@ -8,16 +8,28 @@
   <title>Starter Files and Tooling Setup!</title>
 </head>
 
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+  </div>
+</body>
+
 <style>
-  p {
-    font-size: 50px;
-    border-bottom: 10px solid var(--yellow);
-    color: var(--black);
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 200px 100px;
+    grid-gap: 20px;
   }
 </style>
-
-<body>
-  <p>Hello!</p>
-</body>
 
 </html>
